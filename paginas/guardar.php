@@ -1,6 +1,6 @@
 ﻿<?php
 // Usamos el archivo de conexión centralizado
-include("conexion.php");
+include("/paginas/conexion.php");
 
 // Recibimos los datos
 $nombre = $_POST['nombre'] ?? '';
