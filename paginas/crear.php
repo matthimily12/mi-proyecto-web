@@ -1,6 +1,6 @@
 ﻿<?php
 // 1. Incluimos la conexión
-include("conexion.php");
+include("/paginas/conexion.php");
 
 // 2. Recibimos los datos
 $nombre = $_POST['nombre'];
