@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Ephoria maquillaje</title>
+    <link rel="stylesheet" href="Encuestaas.css">
+</head>
+<body>
+
+    <section class="feedback-container">
+        <header class="survey-header">
+            <h1>Encuesta <span class="brand-name">"Ephoria maquillaje"</span></h1>
+            <p>Tu opinión es la base de nuestra creación.</p>
+        </header>
+
+        <form id="ephoria-survey" data-netlify="true">
+            
+            <fieldset>
+                <legend>Identidad y Concepto</legend>
+                <div class="form-group"><label>1. ¿Qué piensas al escuchar "Ephoria maquillaje"?</label><input type="text" name="p1"></div>
+                <div class="form-group"><label>2. ¿Nuestra imagen te transmite lujo?</label><select name="p2"><option value="si">Sí</option><option value="no">No</option></select></div>
+                <div class="form-group"><label>3. ¿Qué color asocias con la marca?</label><input type="text" name="p3"></div>
+                <div class="form-group"><label>4. Califica nuestra modernidad (1-5):</label><input type="range" name="p4" min="1" max="5"></div>
+                <div class="form-group"><label>5. ¿El nombre es fácil de recordar?</label><select name="p5"><option value="si">Sí</option><option value="no">No</option></select></div>
+                <div class="form-group"><label>6. ¿Qué valores asocias con nosotros?</label><input type="text" name="p6"></div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tu Rutina</legend>
+                <div class="form-group"><label>7. ¿Cuántos productos usas al día?</label><input type="number" name="p7"></div>
+                <div class="form-group"><label>8. Producto indispensable:</label><input type="text" name="p8"></div>
+                <div class="form-group"><label>9. Tipo de piel:</label><select name="p9"><option value="grasa">Grasa</option><option value="seca">Seca</option><option value="mixta">Mixta</option></select></div>
+                <div class="form-group"><label>10. ¿Acabado Mate o Glowy?</label><select name="p10"><option value="mate">Mate</option><option value="glowy">Glowy</option></select></div>
+                <div class="form-group"><label>11. Tiempo que dedicas a maquillarte:</label><input type="text" name="p11"></div>
+                <div class="form-group"><label>12. ¿Ves tutoriales seguido?</label><select name="p12"><option value="si">Sí</option><option value="no">No</option></select></div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Expectativas</legend>
+                <div class="form-group"><label>13. Producto estrella que desearías:</label><input type="text" name="p13"></div>
+                <div class="form-group"><label>14. ¿Pigmentación o Duración?</label><select name="p14"><option value="p">Pigmentación</option><option value="d">Duración</option></select></div>
+                <div class="form-group"><label>15. ¿Maquillaje con Skincare?</label><select name="p15"><option value="si">Sí</option><option value="no">No</option></select></div>
+                <div class="form-group"><label>16. Aroma preferido:</label><input type="text" name="p16"></div>
+                <div class="form-group"><label>17. ¿Incluir brocha en el kit?</label><select name="p17"><option value="si">Sí</option><option value="no">No</option></select></div>
+                <div class="form-group"><label>18. Precio justo por una paleta (MXN):</label><input type="text" name="p18"></div>
+                <div class="form-group"><label>19. Empaque: ¿Minimalista o Artístico?</label><select name="p19"><option value="m">Minimalista</option><option value="a">Artístico</option></select></div>
+                <div class="form-group"><label>20. ¿Comprarías repuestos (refills)?</label><select name="p20"><option value="si">Sí</option><option value="no">No</option></select></div>
+                <div class="form-group"><label>21. Importancia de que sea Vegano (1-10):</label><input type="range" name="p21" min="1" max="10"></div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ephoria y Tú</legend>
+                <div class="form-group"><label>22. ¿Dónde compras tu maquillaje?</label><input type="text" name="p22"></div>
+                <div class="form-group"><label>23. ¿Por qué elegirías Ephoria?</label><textarea name="p23"></textarea></div>
+                <div class="form-group"><label>24. ¿Deseas muestras gratis?</label><select name="p24"><option value="si">Sí</option><option value="no">No</option></select></div>
+                <div class="form-group"><label>25. Influencer para colaboración:</label><input type="text" name="p25"></div>
+                <div class="form-group"><label>26. ¿Te interesan masterclasses?</label><select name="p26"><option value="si">Sí</option><option value="no">No</option></select></div>
+                <div class="form-group"><label>27. Contenido favorito en redes:</label><input type="text" name="p27"></div>
+                <div class="form-group"><label>28. ¿Te unirías a un programa de puntos?</label><select name="p28"><option value="si">Sí</option><option value="no">No</option></select></div>
+                <div class="form-group"><label>29. Probabilidad de recomendarnos (1-10):</label><input type="range" name="p29" min="1" max="10"></div>
+                <div class="form-group"><label>30. Comentario adicional:</label><textarea name="p30"></textarea></div>
+            </fieldset>
+
+            <button type="submit" class="submit-btn">Enviar Encuesta Final</button>
+        </form>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<?php
+// Nos conectamos a la base de datos
+$conexion = mysqli_connect("localhost", "root", "", "ephoria");
+
+// Jalamos los mensajes de la tabla 'ephoria'
+$sql = "SELECT * FROM ephoria";
+$resultado = mysqli_query($conexion, $sql);
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ephoria - Registros</title>
+    <style>
+        body { font-family: Arial; background: #fff0f5; }
+        .contenedor { width: 80%; margin: 40px auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        h1 { font-family: 'Playfair Display', serif; color: #d1105a; text-align: center; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #eee; padding: 12px; text-align: center; }
+        th { background: #ff4d94; color: white; }
+        tr:hover { background-color: #fdf8fa; }
+        .volver-btn { display: inline-block; padding: 10px 15px; background: #333; color: white; border-radius: 5px; text-decoration: none; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="contenedor">
+    <h1>Mensajes Guardados (Ephoria)</h1>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Correo Electrónico</th>
+            <th>Mensaje</th>
+        </tr>
+
+        <?php while($fila = mysqli_fetch_assoc($resultado)){ ?>
+        <tr>
+            <td><?php echo $fila['id']; ?></td>
+            <td><?php echo htmlspecialchars($fila['nombre']); ?></td>
+            <td><?php echo htmlspecialchars($fila['correo']); ?></td>
+            <td><?php echo nl2br(htmlspecialchars($fila['mensaje'])); ?></td>
+        </tr>
+        <?php } ?>
+    </table>
+
+    <a href="index2.html" class="volver-btn">Volver al formulario</a>
+</div>
+
+</body>
+</html>

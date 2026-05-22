@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ephoria - Catálogo de Maquillaje</title>
+    <style>
+        /* ETIQUETA UNIVERSAL (*)
+           Se aplica a todos los elementos para eliminar espacios por defecto
+           y definir la tipografía general de la página.
+        */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fff0f5; /* Un tono rosa muy claro para la estética de Ephoria */
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d1105a;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #555;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        /* ESTILO DE LA MARQUESINA (ANUNCIO DE OFERTA)
+           Se coloca al inicio para resaltar una promoción especial.
+        */
+        marquee {
+            background-color: #d1105a;
+            color: white;
+            padding: 12px;
+            font-weight: bold;
+            border-radius: 50px; /* Bordes redondeados para un look más suave */
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        /* ESTILO DE LA TABLA DE PRODUCTOS
+           Configuración de bordes, alineación y colores.
+        */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Une los bordes de las celdas */
+            background-color: #ffffff;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Estilos para encabezados y celdas */
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* Estilo para los títulos de las columnas */
+        th {
+            background-color: #f8bbd0;
+            color: #880e4f;
+            font-size: 1.1em;
+        }
+
+        /* Estilo para las imágenes del catálogo de maquillaje */
+        .foto-producto {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #fce4ec;
+        }
+
+        /* Regla para resaltar filas al pasar el mouse (hover) */
+        tr:hover {
+            background-color: #fff9fb;
+        }
+
+        /* Estilo para los precios */
+        .precio {
+            font-weight: bold;
+            color: #d1105a;
+        }
+    </style>
+</head>
+<body>
+
+    <marquee behavior="alternate" scrollamount="8">
+        ✨ ¡Especial de Temporada en Ephoria! Llévate un Tint Gloss gratis en compras mayores a $800 ✨
+    </marquee>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Catálogo</a>
+        <a href="#">Precios</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <h1>Ephoria</h1>
+    <h2>Catálogo de Maquillaje Coreano</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Fotografía</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cushion Foundation</td>
+                <td>Base de maquillaje ligera con alta protección solar y acabado natural.</td>
+                <td class="precio">$520</td>
+                <td><img src="../img/Cushion Foundation.jpg" alt="Cushion" class="foto-producto"></td>
+            </tr>
+            <tr>
+                <td>Velvet Lip Tint</td>
+                <td>Tinta para labios de larga duración con textura aterciopelada.</td>
+                <td class="precio">$240</td>
+                <td><img src="../img/Lip Tint.jpg" alt="Lip Tint" class="foto-producto"></td>
+            </tr>
+            <tr>
+                <td>Paleta "Soft Rose"</td>
+                <td>9 sombras en tonos rosados y glitter para un look romántico.</td>
+                <td class="precio">$480</td>
+                <td><img src="../img/Palette.jpg" alt="Palette" class="foto-producto"></td>
+            </tr>
+            <tr>
+                <td>Iluminador Prismático</td>
+                <td>Brillo sutil que refleja la luz para un efecto "glass skin".</td>
+                <td class="precio">$310</td>
+                <td><img src="../img/iluminador.jpg" alt="Glow" class="foto-producto"></td>
+            </tr>
+            <tr>
+                <td>Delineador Ultra Fino</td>
+                <td>Punta de precisión para trazos definidos y resistentes al agua.</td>
+                <td class="precio">$190</td>
+                <td><img src="../img/delineador.jpg" alt="Eyeliner" class="foto-producto"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        <p>
+            &copy; Michelle Villarreal Lopez
+        </p>
+    </footer>
+</body>
+</html>

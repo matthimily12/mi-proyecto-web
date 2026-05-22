@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ephoria - Contactos</title>
+    <style>
+        :root {
+            --rosa-principal: #ff4d94;
+            --rosa-claro: #fff0f5;
+            --rosa-acento: #d1105a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: var(--rosa-claro);
+            overflow-x: hidden;
+        }
+
+        /* NAV */
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: var(--rosa-acento);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--rosa-principal);
+        }
+
+        /* SECCIÓN CONTACTOS */
+        .contactos {
+            margin-top: 100px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contactos h2 {
+            color: var(--rosa-acento);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .contactos p {
+            color: #555;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        .contenedor-contactos {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .contenedor-contactos .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            width: 250px;
+            transition: 0.3s;
+        }
+
+        .contenedor-contactos .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contenedor-contactos .card h3 {
+            color: var(--rosa-principal);
+            margin-bottom: 15px;
+        }
+
+        .contenedor-contactos .card a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* FORMULARIO */
+        .formulario {
+            background: white;
+            max-width: 600px;
+            margin: 0 auto 50px auto;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .formulario h2 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+        }
+
+        .formulario form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .formulario input, .formulario textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            outline: none;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .formulario input:focus, .formulario textarea:focus {
+            border-color: var(--rosa-principal);
+            box-shadow: 0 0 5px rgba(255, 77, 148, 0.2);
+        }
+
+        .formulario button {
+            background: linear-gradient(45deg, var(--rosa-principal), var(--rosa-acento));
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .formulario button:hover {
+            transform: scale(1.02);
+        }
+
+        footer {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            color: #777;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="Ephoria.html">Inicio</a>
+        <a href="video.html">Sobre Ephoria</a>
+        <a href="somose.html">Somos</a>
+        <a href="cuadro.html">Catálogo</a>
+        <a href="encuesta.html">Encuesta</a>
+        <a href="index2.html">Contactos</a>
+        <a href="login.html" style="color: #333;">Admin ⚙️</a>
+    </nav>
+
+    <section class="contactos">
+        <h2>Estamos para ayudarte 💖</h2>
+        <p>Puedes comunicarte con nosotros mediante cualquiera de estos medios.</p>
+
+        <div class="contenedor-contactos">
+            <div class="card">
+                <h3>📧 Correo</h3>
+                <a href="mailto:ephoria@gmail.com">ephoria@gmail.com</a>
+            </div>
+            <div class="card">
+                <h3>📱 Instagram</h3>
+                <a href="#">@ephoria.beauty</a>
+            </div>
+            <div class="card">
+                <h3>💬 WhatsApp</h3>
+                <a href="#">+52 55 1234 5678</a>
+            </div>
+        </div>
+
+        <div class="formulario">
+            <h2>Envíanos un mensaje</h2>
+            <form action="crear.php" method="POST">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="correo" placeholder="Tu correo" required>
+                <textarea rows="6" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Ephoria</p>
+    </footer>
+
+</body>
+</html>

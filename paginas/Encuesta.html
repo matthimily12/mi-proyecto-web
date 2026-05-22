@@ -1,0 +1,166 @@
+<section class="feedback-container">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #fff0f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff4d94;
+            margin-top: 20px;
+        }
+
+        .brand-name {
+            font-style: italic;
+        }
+
+        form {
+            max-width: 700px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        fieldset {
+            border: 2px solid #f8bbd0;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        legend {
+            color: #d1105a;
+            font-weight: bold;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(45deg,#ff4d94,#d1105a);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Encuesta <span class="brand-name">Ephoria</span></h1>
+
+    <p style="text-align:center; color:#777;">
+        Queremos conocerte para crear el maquillaje perfecto para ti 💖
+    </p>
+
+    <form>
+
+        <!-- IDENTIDAD -->
+        <fieldset>
+            <legend>Sobre ti</legend>
+
+            <div class="form-group">
+                <label>¿Qué te inspira Ephoria?</label>
+                <input type="text" name="p1" placeholder="Ej: belleza, elegancia, naturalidad">
+            </div>
+
+            <div class="form-group">
+                <label>Tipo de piel</label>
+                <select name="p2">
+                    <option>Seca</option>
+                    <option>Grasa</option>
+                    <option>Mixta</option>
+                    <option>Sensible</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>¿Prefieres maquillaje?</label>
+                <select name="p3">
+                    <option>Natural (diario)</option>
+                    <option>Glowy (brillante)</option>
+                    <option>Full glam</option>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <!-- HÁBITOS -->
+        <fieldset>
+            <legend>Tu rutina</legend>
+
+            <div class="form-group">
+                <label>¿Cuánto tiempo tardas en maquillarte?</label>
+                <input type="text" name="p4" placeholder="Ej: 10-20 minutos">
+            </div>
+
+            <div class="form-group">
+                <label>Producto favorito</label>
+                <input type="text" name="p5">
+            </div>
+
+            <div class="form-group">
+                <label>¿Usas skincare antes del maquillaje?</label>
+                <select name="p6">
+                    <option>Sí siempre</option>
+                    <option>A veces</option>
+                    <option>No</option>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <!-- MARCA -->
+        <fieldset>
+            <legend>Ephoria</legend>
+
+            <div class="form-group">
+                <label>¿Qué valoras más?</label>
+                <select name="p7">
+                    <option>Calidad</option>
+                    <option>Precio</option>
+                    <option>Ingredientes naturales</option>
+                    <option>Diseño</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>¿Comprarías productos K-beauty?</label>
+                <select name="p8">
+                    <option>Sí</option>
+                    <option>No</option>
+                    <option>Tal vez</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Sugerencia para la marca</label>
+<textarea name="p9" rows="3"></textarea>
+            </div>
+
+        </fieldset>
+
+        <button class="submit-btn">Enviar Encuesta 💖</button>
+
+    </form>
+
+</section>
