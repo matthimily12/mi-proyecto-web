@@ -1,9 +1,9 @@
 ﻿<?php
 
 $conexion = mysqli_connect(
-    "localhost",
-    "root",
-    "",
+    "aws-123.mysql.server.com",
+    "usuario123",
+    "contraseña123",
     "ephoria"
 );
 
