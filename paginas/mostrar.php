@@ -1,6 +1,6 @@
 <?php
 // Incluimos la conexión para que funcione la base de datos
-include("conexion.php");
+include("/paginas/conexion.php");
 
 // Consultamos todos los datos de la tabla 'ephoria'
 $sql = "SELECT * FROM ephoria";
