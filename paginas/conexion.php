@@ -1,11 +1,10 @@
 <?php
 
 $conexion = mysqli_connect(
-    "localhost",
-    "root",
-    "",
-    "ephoria",
-    3307
+    "aws-123.mysql.server.com",
+    "usuario123",
+    "contraseña123",
+    "ephoria"
 );
 
 if(!$conexion){
